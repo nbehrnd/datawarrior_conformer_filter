@@ -1,0 +1,40 @@
+<datawarrior-fileinfo>
+<version="3.3">
+<created="1686121688221">
+<rowcount="12">
+</datawarrior-fileinfo>
+<column properties>
+<columnName="Structure">
+<columnProperty="specialType	idcode">
+<columnName="FragFp">
+<columnProperty="parent	Structure">
+<columnProperty="specialType	FragFp">
+<columnProperty="version	1.2.1">
+</column properties>
+FragFp	Structure
+:xjhyyg_jsz_Whkiicg5BH9ptOPNc416HF0v8BJFcq8Z4FV1Xc8eV0KJ10g1lH3V180W8FG4#V02080603V	fbeAp@@HD{pTyEDieDeEMDXiZfjjVfh@@
+yospJZNG8V4F4124FN050N2H$839X0HIV50803GV960WV021V52KL10189@kFg1F024c24V@4404F5F2010	fcw@h@@HyItTe{oHheEEDTeEhhmBejuQmPMADEDTM@@@
+:xzhyyzjjuzhfxmizxihjMQzxxuTsJ3LJF8vCRLKcrRpoQBWyiNeo0FFW1g8FHAVWBJ78HG5608kV32802010	fe{Ap@@Hy[tQyEDihhdhThcLeEF{MjZjfjj@H`@@
+:xzBqsqde2y43B4sRkhVC0HVgFoNfC04LH0580F19F96VW02eDFBX01W0981PHFcV59X4e250841NF2186030	fkAp@@H\DmUyEMEDhdeMEJdmeDJVoQRtAAUUUUTuB`@@
+LFsF!818V$24F8010N0H%2120FHV1#3!12$20V!G21#880F01#482$4#4F2010	fjmAP@@\txNRJZJJJKQJkBT[u@DAEET`@@
+;j:Uirnyx:hcj_RoTbHCafhz0Vo_E3W@87Ro80aZVX2VM4XFmVV5480o4W8c4k0VV04#V0X4dc81a0n0	ficQh@EZ@cdk^SdoQyEDhhhRiheEJhuTsTuSML@@
+:xzdyyzjjmzCex6uDwDZC_QyxooNfS30k20vN3F1hsRF0242v@O9Z09lV8V8FH1#908025V051801FR2010	fjmA`@@\KdbfbbbNtTRHmIsSUUU@PT@@@
+zwtp44NK8X0N416ZRN0_VN2H0VF083924LHV50BF3GF960WV025VB2KLW0909@kFV11224824V@4ZF4F5F201V	fle@p@@HEkp\bbVbbtRRaT[tVjBBJib@@
+:wzwysnheam5WE6mNlhVS6HJFFVPY9X0HIVpR@23OkO6ktZ0@9V5aKLl09c9PmGg106YBcH4X@5404GCR201V	fkAp@@HyIpUyEDhhhhUDldlXeEkvRsvu@tEQUUTuC@@@
+zvwzcyynjjum9cz6mArehz_HqJomTz0HFyHSnp32jBOsFkQR8Q3v0JHTk0209cH521VS5Q3H46890882LJ201V	eh\PA@@@FAGOFmoldRVfdtbTTlbtTLUVpHbJn^iZjjjjj`j@j`@@
+zxxp5ZNKWX4B416iRB0Z2N0PVV!91824H2V50BF2101!1V03WV0VG690V09dVF081#8010@4Z040GF6030	fn}AH@@HEIQoIKdTRTTTTJbVVu`mTCQEEUP@@
+:xzxyyyzjyzxfxujjxizjr9ztxyTwJlLm08uxULNgzwto@irwe9mZ@CJW0_5lTE4k8FW8FG56!VV38806030	eo`PA@@@DNG@hdllbbTTTTJbbbbV~bR|Jn^ZjYjjYjj`@`@@
+<datawarrior properties>
+<columnFilter_Table="">
+<columnWidth_Table_Structure="100">
+<detailView="height[Data]=0.5;height[Structure]=0.5">
+<headerLines_Table="2">
+<mainSplitting="0.70688">
+<mainView="Table">
+<mainViewCount="1">
+<mainViewDockInfo0="root">
+<mainViewName0="Table">
+<mainViewType0="tableView">
+<rightSplitting="0.64035">
+<rowHeight_Table="80">
+</datawarrior properties>
