@@ -4,8 +4,8 @@
 # name   : best_conformer.py
 # author : nbehrnd@yahoo.com
 # license: GPLv2
-# date   : <2023-06-07 Wed>
-# edit   :
+# date   : [2023-06-07 Wed]
+# edit   : [2025-01-30 Thu]
 """
 report the conformer (by ID and stereo label) of lowest energy to the CLI
 
