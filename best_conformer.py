@@ -4,8 +4,8 @@
 # name   : best_conformer.py
 # author : nbehrnd@yahoo.com
 # license: GPLv2
-# date   : <2023-06-07 Wed>
-# edit   :
+# date   : [2023-06-07 Wed]
+# edit   : [2025-01-30 Thu]
 """
 report the conformer (by ID and stereo label) of lowest energy to the CLI
 
@@ -59,8 +59,7 @@ def identify_column_headers(raw_data):
 
     # for the stereo ID
     list_of_matches = [
-        i for i, item in enumerate(column_heads)
-        if re.search("Stereo Isomer", item)
+        i for i, item in enumerate(column_heads) if re.search("Stereo Isomer", item)
     ]
     column_stereo = int(list_of_matches[0])
 
@@ -98,7 +97,8 @@ def process_dw_txt(raw_data, column_id, column_stereo, column_energy):
 
                 elif key in report_dictionary:
                     energy_from_dictionary = float(
-                        report_dictionary.get(key).split("\t")[column_energy])
+                        report_dictionary.get(key).split("\t")[column_energy]
+                    )
 
                     energy_from_list = float(entry[column_energy])
 
@@ -129,9 +129,9 @@ def main():
     args = get_args()
 
     column_heads, column_id, column_stereo, column_energy = identify_column_headers(
-        args.file.name)
-    query_data = process_dw_txt(args.file.name, column_id, column_stereo,
-                                column_energy)
+        args.file.name
+    )
+    query_data = process_dw_txt(args.file.name, column_id, column_stereo, column_energy)
     report_results(column_heads, query_data)
 
 
