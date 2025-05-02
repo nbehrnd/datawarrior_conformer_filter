@@ -56,23 +56,6 @@ list's new line read. The entry in the dictionary is updated – by the
 line's complete content, including conformation and energy – if the
 energy reported by the line is lower.
 
-# content
-
-``` bash
-.
-├── best_conformer.py
-├── LICENSE
-├── README.md
-├── README.org
-└── test_data
-    ├── conformers.dwar
-    ├── conformers.txt
-    ├── Random_Molecules.dwar
-    └── results.txt
-
-2 directories, 8 files
-```
-
 # Footnotes
 
 [^1]: <https://openmolecules.org/datawarrior/index.html>
