@@ -1,8 +1,8 @@
 # name:     README.org
 # author:   nbehrnd@yahoo.com
 # license:  GPL v2, 2022
-# date:     <2022-03-17 Thu>
-# edit:     <2023-06-07 Wed>
+# date:     [2022-03-17 Thu]
+# edit:     [2025-05-02 Fri]
 
 #+OPTIONS: toc:nil
 
@@ -66,28 +66,6 @@
   from the list's new line read.  The entry in the dictionary is
   updated -- by the line's complete content, including conformation
   and energy -- if the energy reported by the line is lower.
-
-* content
-
-  #+begin_src bash :exports both code results  :results replace code
-tree -L 2
-  #+end_src
-
-  #+RESULTS:
-  #+begin_src bash
-  .
-  ├── best_conformer.py
-  ├── LICENSE
-  ├── README.md
-  ├── README.org
-  └── test_data
-      ├── conformers.dwar
-      ├── conformers.txt
-      ├── Random_Molecules.dwar
-      └── results.txt
-
-  2 directories, 8 files
-  #+end_src
 
 * Footnotes
 
