@@ -5,7 +5,7 @@
 # author : nbehrnd@yahoo.com
 # license: GPLv2
 # date   : [2023-06-07 Wed]
-# edit   : [2025-01-30 Thu]
+# edit   : [2026-07-01 Wed]
 """
 report the conformer (by ID and stereo label) of lowest energy to the CLI
 
@@ -25,6 +25,16 @@ portability, this implementation only depends on Python's standard library."""
 
 import argparse
 import re
+import tomllib
+from pathlib import Path
+
+
+def read_version_from_pyproject():
+    """Retrieve version information from `pyproject.toml`."""
+    pyproject_path = Path(__file__).parent.parent.parent / "pyproject.toml"
+    with open(pyproject_path, "rb") as f:
+        information = tomllib.load(f)
+    return information["project"]["version"]
 
 
 def get_args():
@@ -37,12 +47,32 @@ def get_args():
 
     parser.add_argument(
         "file",
+        nargs="?",
         help="DataWarrior's conformer list, exported as .txt file",
         type=argparse.FileType("rt"),
         default=None,
     )
 
-    return parser.parse_args()
+    parser.add_argument(
+        "-v",
+        "--version",
+        action="store_true",
+        help="Provide the version information",
+    )
+
+    args = parser.parse_args()
+
+    # an early orderly exit on version report
+    if args.version:
+        version = read_version_from_pyproject()
+        print(f"version: {version}")
+        exit(0)
+
+    # still provide a hand if neither `-h`, nor `-v` was used
+    if args.file is None and not args.version:
+        parser.error("the following arguments are required: file")
+
+    return args
 
 
 def identify_column_headers(raw_data):
@@ -52,9 +82,7 @@ def identify_column_headers(raw_data):
 
     column_heads = table_header.split("\t")
     # for the structure ID (though enantiomers, diastereomers share an ID here)
-    list_of_matches = [
-        i for i, item in enumerate(column_heads) if re.search("ID", item)
-    ]
+    list_of_matches = [i for i, item in enumerate(column_heads) if re.search("ID", item)]
     column_id = int(list_of_matches[0])
 
     # for the stereo ID
@@ -135,6 +163,5 @@ def main():
     report_results(column_heads, query_data)
 
 
-# --------------------------------------------------
 if __name__ == "__main__":
     main()

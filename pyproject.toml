@@ -1,40 +1,64 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools>=42"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "datawarrior_conformer_filter"
-version = "0.1.0"
-requires-python = ">=3.10"
+version = "0.1.1"
+requires-python = ">=3.11"
 authors = [
     { name="Norwid Behrnd", email="nbehrnd@yahoo.com" }
 ]
 description = "report .dwar conformer of lowest energy"
 readme = "README.md"
-
+license = "GPL-2.0-only"
 license-files = ["LICENSE"]
 keywords = ["datawarrior"]
 classifiers = [
     "Development Status :: 4 - Beta",
-    "Programming Language :: Python :: 3 :: Only",
     "Environment :: Console",
+    "Intended Audience :: Education",
     "Intended Audience :: End Users/Desktop",
-    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
     "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Chemistry",
 ]
 
 dependencies = []  # None (it works with Python's standard library alone)
 
 [project.optional-dependencies]
 dev = [
-    "black",
-    "build",
-    "flake8",
-    "pre-commit"
+    "black>=26.5.1",
+    "build>=1.2.2.post1",
+    "flake8>=7.3.0",
+    "pre-commit>=4.5.1"
 ]
+
+[dependency-groups]
+dev = [
+    "black>=26.5.1",
+    "build>=1.2.2.post1",
+    "flake8>=7.3.0",
+    "pre-commit>=4.5.1"
+]
+
 
 [project.urls]
 Homepage = "https://github.com/nbehrnd/datawarrior_conformer_filter"
 
 [project.scripts]
 best_conformer = "datawarrior_conformer_filter.best_conformer:main"
+
+[tool.codespell]
+skip = "*.dwar, *.txt"
