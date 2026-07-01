@@ -60,3 +60,5 @@ Homepage = "https://github.com/nbehrnd/datawarrior_conformer_filter"
 [project.scripts]
 best_conformer = "datawarrior_conformer_filter.best_conformer:main"
 
+[tool.codespell]
+skip = "*.dwar, *.txt"
