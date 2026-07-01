@@ -52,9 +52,7 @@ def identify_column_headers(raw_data):
 
     column_heads = table_header.split("\t")
     # for the structure ID (though enantiomers, diastereomers share an ID here)
-    list_of_matches = [
-        i for i, item in enumerate(column_heads) if re.search("ID", item)
-    ]
+    list_of_matches = [i for i, item in enumerate(column_heads) if re.search("ID", item)]
     column_id = int(list_of_matches[0])
 
     # for the stereo ID
